@@ -50,15 +50,15 @@ namespace CSharp_TinhChuViDienTich
 
         private void butTinhChuVi_Click(object sender, EventArgs e)
         {
-            if(GetInfo()) labKQ.Text = "- Chu vi: " + TinhCV();
-            else
+            if (GetInfo()) labKQ.Text = "- Chu vi: " + TinhCV();
+            else ThongBao();
         }
 
 
         private void butTinhDienTich_Click_1(object sender, EventArgs e)
         {
-            GetInfo();
-            labKQ.Text = "- Diện tích: " + TinhDT();
+            if (GetInfo()) labKQ.Text = "- Diện tích: " + TinhDT();
+            else ThongBao();
         }
 
         private void butThoat_Click(object sender, EventArgs e)
